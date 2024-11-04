@@ -1,14 +1,14 @@
 
-title: My Resume
-url: 'http://junlulocky.com'
-baseurl: '/PanelCV' #change it according to your repository name
+title: YumengSong CV
+url: 'https://ymcv.github.io/'
+baseurl: '/yumengs' #change it according to your repository name
 
 
 
 # Profile information
-yourname: Brown Smith  ## put your name
-title: 'GRAPHIC &amp; WEB DESIGNER'  ## your title
-location: San Francisco , CA
+yourname: Yumeng Song  ## put your name
+title: 'Postdoc, Aalborg University'  ## your title
+location: Aalborg, DK
 
 
 ## Social Profiles
@@ -17,7 +17,8 @@ twitter: http://www.twitter.com  ## your twitter account url
 linkedin: http://www.linkedin.com  ## your linkedin account url
 dribbble: http://www.dribble.com  ## you dribbble account url
 foursquare: http://www.foursquare.com  ## your foursquare account url
-
+googlescholar: https://scholar.google.com/citations?user=4d_LdhQAAAAJ&hl=en
+dblp: https://dblp.org/pid/194/8163.html
 
 
 # Update all the sections by editing the files inside _includes folder.
