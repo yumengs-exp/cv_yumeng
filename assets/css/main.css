@@ -595,7 +595,7 @@ h2.resp-accordion:hover {
     text-align: left;
 }
 
-#filters {
+/* #filters {
     margin: 1%;
     padding: 0;
     list-style: none;
@@ -654,7 +654,7 @@ h2.resp-accordion:hover {
     visibility: hidden;
     width: 0;
     height: 0;
-}
+} */
 
 /*--------------------------------------------------
 ---------------------- Title  ---------------------
