@@ -235,42 +235,40 @@ jQuery(document).ready(function($) {
     /* ----------------------------- Portfolio ------------------------------ */
     /* ---------------------------------------------------------------------- */
 
+var filterList = {
+    init: function () {
 
-    var filterList = {
-        init: function() {
+        // MixItUp plugin
+        // http://mixitup.io
+        $('#portfoliolist').mixitup({
+            targetSelector: '.portfolio-item', // 使用更具体的选择器，如 `.portfolio-item`
+            filterSelector: '.filter',
+            effects: ['fade'],
+            easing: 'snap',
+            // Call the hover effect
+            onMixEnd: filterList.hoverEffect
+        });
+    },
+    hoverEffect: function () {
 
-            // MixItUp plugin
-            // http://mixitup.io
-            $('#portfoliolist').mixitup({
-                targetSelector: '.portfolio',
-                filterSelector: '.filter',
-                effects: ['fade'],
-                easing: 'snap',
-                // call the hover effect
-                onMixEnd: filterList.hoverEffect()
-            });
+        // Simple parallax effect
+        $('#portfoliolist .portfolio-item').hover(
+            function () {
+                $(this).find('.label').stop().animate({ bottom: 0 }, 200);
+                $(this).find('img').stop().animate({ top: -30 }, 500);
+            },
+            function () {
+                $(this).find('.label').stop().animate({ bottom: -40 }, 200);
+                $(this).find('img').stop().animate({ top: 0 }, 300);
+            }
+        );
+    }
+};
 
-        },
-        hoverEffect: function() {
-
-            // Simple parallax effect
-            $('#portfoliolist .portfolio').hover(
-                    function() {
-                        $(this).find('.label').stop().animate({bottom: 0}, 200);
-                        $(this).find('img').stop().animate({top: -30}, 500);
-                    },
-                    function() {
-                        $(this).find('.label').stop().animate({bottom: -40}, 200);
-                        $(this).find('img').stop().animate({top: 0}, 300);
-                    }
-            );
-
-        }
-
-    };
-
-    // Run the show!
+// Initialize filter list
+$(function () {
     filterList.init();
+});
 
     /* ---------------------------------------------------------------------- */
     /* ----------------------------- prettyPhoto ---------------------------- */
