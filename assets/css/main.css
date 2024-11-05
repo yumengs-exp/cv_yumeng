@@ -587,12 +587,12 @@ h2.resp-accordion:hover {
 /*--------------------------------------------------
 ----------------------- Portfolio ------------------
 ---------------------------------------------------*/
-
 .container-portfolio { 
     position: relative; 
     width: 100%; 
     margin: 0 auto; 
     transition: all 1s ease;
+    text-align: left;
 }
 
 #filters {
@@ -600,17 +600,15 @@ h2.resp-accordion:hover {
     padding: 0;
     list-style: none;
     display: inline-block;
-    text-align: center;
-    width: 100%;
+    text-align: left;
 }
 
 #filters li {
-    display: inline-block;
-    margin: 0 10px;
+    float: left;
 }
 
 #filters li span {
-    display: inline-block;
+    display: block;
     padding: 5px 20px;		
     text-decoration: none;
     color: #fff;
@@ -624,30 +622,39 @@ h2.resp-accordion:hover {
 }
 
 #portfoliolist .portfolio {
+    box-sizing: border-box;
     width: 100%;
-    margin-bottom: 20px;
+    margin: 1% 0;
+    display: block;
     float: none;
-    clear: both;
     overflow: hidden;
-    background: #666;
-    padding: 15px;
-    color: #fff;
-    text-align: center;
+    background: none;
+    text-align: left;
 }
 
-.portfolio-wrapper,
-.portfolio img,
-.portfolio .label {
-    /* 移除悬停效果样式 */
-    position: static;
-    transition: none;
+.portfolio-wrapper {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.portfolio img {
+    max-width: 100%;
+    position: relative;
+}
+
+.portfolio .label, .portfolio .label-bg, .portfolio .label-text, .portfolio .text-title {
+    display: none;
 }
 
 .clear {
     clear: both;
     display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
-
 
 /*--------------------------------------------------
 ---------------------- Title  ---------------------
