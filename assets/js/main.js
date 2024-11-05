@@ -241,15 +241,15 @@ var filterList = {
         $('#portfoliolist').mixitup({
             targetSelector: '.portfolio',
             filterSelector: '.filter',
-            effects: [],  // 去掉 'fade' 效果
-            easing: 'snap'
+            effects: ['fade'],
+            easing: 'snap',
         });
-    }
+    },
 };
 
+// Run the show!
+filterList.init();
 
-    // Run the show!
-    filterList.init();
 
     /* ---------------------------------------------------------------------- */
     /* ----------------------------- prettyPhoto ---------------------------- */
