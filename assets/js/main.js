@@ -241,12 +241,10 @@ var filterList = {
         // MixItUp plugin
         // http://mixitup.io
         $('#portfoliolist').mixitup({
-            targetSelector: '.portfolio-item', // 使用更具体的选择器，如 `.portfolio-item`
+            targetSelector: '.portfolio-item', 
             filterSelector: '.filter',
             effects: ['fade'],
-            easing: 'snap',
-            // Call the hover effect
-            onMixEnd: filterList.hoverEffect
+            easing: 'snap'
         });
     },
     hoverEffect: function () {
@@ -264,11 +262,8 @@ var filterList = {
         );
     }
 };
-
-// Initialize filter list
-$(function () {
+    // Run the show!
     filterList.init();
-});
 
     /* ---------------------------------------------------------------------- */
     /* ----------------------------- prettyPhoto ---------------------------- */
