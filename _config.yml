@@ -20,7 +20,7 @@ foursquare: http://www.foursquare.com  ## your foursquare account url
 googlescholar: https://scholar.google.com/citations?user=4d_LdhQAAAAJ&hl=en
 dblp: https://dblp.org/pid/194/8163.html
 github: https://github.com/yumengs-exp
-researchgate:https://www.semanticscholar.org/author/8942172
+researchgate: https://www.semanticscholar.org/author/8942172
 
 
 # Update all the sections by editing the files inside _includes folder.
