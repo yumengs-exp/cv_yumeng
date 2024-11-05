@@ -1102,7 +1102,7 @@ ul.about {
         float: none;
     }
     #profile_social {
-        display: none;
+        display: center;
     }
     #profile_desc {
         display:none;
@@ -1116,7 +1116,7 @@ ul.about {
         float: none;
     }
     #profile_social {
-        display: none;
+        display: center;
     }
     #profile_desc {
         display:none;
@@ -1139,7 +1139,7 @@ ul.about {
         float: none;
     }
     #profile_social {
-        display: none;
+        display: center;
     }
 }
 
